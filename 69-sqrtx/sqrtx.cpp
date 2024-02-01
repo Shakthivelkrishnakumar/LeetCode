@@ -3,7 +3,9 @@ class Solution {
 public:
     long long int squareroot(int n){
     int s=0;
-    int e=n;
+    if (n == 0 || n == 1)
+            return n;
+    int e=n/2;
     long long int mid= s+ (e-s)/2;
     long long int ans =-1;
     while(s<=e){
